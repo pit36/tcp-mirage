@@ -1,0 +1,9 @@
+lib: [
+  "_build/install/default/lib/mirage-unikernel-services-unix/META" {"META"}
+  "_build/install/default/lib/mirage-unikernel-services-unix/opam" {"opam"}
+]
+doc: [
+  "_build/install/default/doc/mirage-unikernel-services-unix/README.md"
+  "_build/install/default/doc/mirage-unikernel-services-unix/LICENSE.md"
+  "_build/install/default/doc/mirage-unikernel-services-unix/CHANGES.md"
+]

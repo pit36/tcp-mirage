@@ -1,0 +1,12 @@
+B ../../_build/default/src/config
+FLG -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs
+PKG base
+PKG base.caml
+PKG base.shadow_stdlib
+PKG bigarray
+PKG configurator
+PKG sexplib
+PKG sexplib.0
+PKG stdio
+PKG unix
+S .

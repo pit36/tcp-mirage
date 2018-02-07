@@ -1,0 +1,2 @@
+src/ethif/ethif.pp.mli: Lwt Mirage_net_lwt Mirage_protocols_lwt
+src/ethif/ethif_packet.pp.mli: Cstruct Ethif_wire Format Macaddr Result

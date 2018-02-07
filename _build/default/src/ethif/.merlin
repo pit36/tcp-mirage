@@ -1,0 +1,27 @@
+B ../../_build/default/src/ethif
+FLG -ppx '/home/iperf/iperf_server/mirage-tcpip/mirage-tcpip/_build/default/.ppx/ppx_cstruct/ppx.exe --as-ppx --cookie '\''library-name="tcpip_ethif"'\'''
+FLG -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs
+PKG bigarray
+PKG bytes
+PKG cstruct
+PKG fmt
+PKG io-page
+PKG ipaddr
+PKG logs
+PKG lwt
+PKG mirage-device
+PKG mirage-flow
+PKG mirage-net
+PKG mirage-net-lwt
+PKG mirage-profile
+PKG mirage-protocols
+PKG mirage-protocols-lwt
+PKG ocplib-endian
+PKG ocplib-endian.bigstring
+PKG result
+PKG rresult
+PKG sexplib
+PKG sexplib.0
+PKG uchar
+PKG unix
+S .

@@ -1,0 +1,2 @@
+src/arpv4/arpv4.pp.mli: Lwt Mirage_clock Mirage_protocols_lwt Mirage_time_lwt
+src/arpv4/arpv4_packet.pp.mli: Arpv4_wire Cstruct Format Ipaddr Macaddr Result

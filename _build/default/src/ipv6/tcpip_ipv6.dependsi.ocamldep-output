@@ -1,0 +1,2 @@
+src/ipv6/ipv6.pp.mli: Ipaddr Lwt Mirage_clock_lwt Mirage_protocols_lwt Mirage_random Mirage_time_lwt
+src/ipv6/ndpv6.pp.mli: Cstruct Ipaddr Macaddr

@@ -1,0 +1,273 @@
+description = ""
+requires = "cstruct tcpip.unix"
+archive(byte) = "tcpip.cma"
+archive(native) = "tcpip.cmxa"
+plugin(byte) = "tcpip.cma"
+plugin(native) = "tcpip.cmxs"
+package "arpv4" (
+  directory = "arpv4"
+  description = ""
+  requires = "bigarray
+              cstruct
+              cstruct
+              duration
+              fmt
+              ipaddr
+              logs
+              mirage-clock-lwt
+              mirage-protocols-lwt
+              mirage-time-lwt
+              rresult
+              sexplib
+              sexplib.0
+              tcpip.ethif
+              unix"
+  archive(byte) = "tcpip_arpv4.cma"
+  archive(native) = "tcpip_arpv4.cmxa"
+  plugin(byte) = "tcpip_arpv4.cma"
+  plugin(native) = "tcpip_arpv4.cmxs"
+)
+package "ethif" (
+  directory = "ethif"
+  description = ""
+  requires = "bigarray
+              cstruct
+              logs
+              mirage-net-lwt
+              mirage-profile
+              mirage-protocols-lwt
+              rresult
+              sexplib
+              sexplib.0
+              unix"
+  archive(byte) = "tcpip_ethif.cma"
+  archive(native) = "tcpip_ethif.cmxa"
+  plugin(byte) = "tcpip_ethif.cma"
+  plugin(native) = "tcpip_ethif.cmxs"
+)
+package "icmpv4" (
+  directory = "icmpv4"
+  description = ""
+  requires = "bigarray
+              cstruct
+              logs
+              mirage-profile
+              mirage-protocols-lwt
+              rresult
+              sexplib
+              sexplib.0
+              tcpip
+              tcpip.udp
+              unix"
+  archive(byte) = "tcpip_icmpv4.cma"
+  archive(native) = "tcpip_icmpv4.cmxa"
+  plugin(byte) = "tcpip_icmpv4.cma"
+  plugin(native) = "tcpip_icmpv4.cmxs"
+)
+package "icmpv4-socket" (
+  directory = "icmpv4-socket"
+  description = ""
+  requires = "cstruct-lwt
+              io-page-unix
+              ipaddr.unix
+              lwt.unix
+              mirage-protocols-lwt
+              tcpip.icmpv4
+              tcpip.ipv4
+              tcpip.ipv6"
+  archive(byte) = "icmpv4_socket.cma"
+  archive(native) = "icmpv4_socket.cmxa"
+  plugin(byte) = "icmpv4_socket.cma"
+  plugin(native) = "icmpv4_socket.cmxs"
+)
+package "ipv4" (
+  directory = "ipv4"
+  description = ""
+  requires = "bigarray
+              cstruct
+              cstruct
+              io-page
+              ipaddr
+              logs
+              mirage-protocols-lwt
+              rresult
+              sexplib
+              sexplib.0
+              tcpip
+              tcpip.ethif
+              tcpip.udp
+              unix"
+  archive(byte) = "tcpip_ipv4.cma"
+  archive(native) = "tcpip_ipv4.cmxa"
+  plugin(byte) = "tcpip_ipv4.cma"
+  plugin(native) = "tcpip_ipv4.cmxs"
+)
+package "ipv6" (
+  directory = "ipv6"
+  description = ""
+  requires = "bigarray
+              cstruct
+              cstruct
+              duration
+              io-page
+              ipaddr
+              logs
+              mirage-clock-lwt
+              mirage-protocols-lwt
+              mirage-random
+              mirage-time-lwt
+              randomconv
+              rresult
+              sexplib
+              sexplib.0
+              tcpip
+              tcpip.ethif
+              unix"
+  archive(byte) = "tcpip_ipv6.cma"
+  archive(native) = "tcpip_ipv6.cmxa"
+  plugin(byte) = "tcpip_ipv6.cma"
+  plugin(native) = "tcpip_ipv6.cmxs"
+)
+package "stack-direct" (
+  directory = "stack-direct"
+  description = ""
+  requires = "fmt
+              ipaddr
+              logs
+              lwt
+              mirage-net-lwt
+              mirage-protocols-lwt
+              mirage-random
+              mirage-stack-lwt
+              mirage-time-lwt
+              result"
+  archive(byte) = "tcpip_stack_direct.cma"
+  archive(native) = "tcpip_stack_direct.cmxa"
+  plugin(byte) = "tcpip_stack_direct.cma"
+  plugin(native) = "tcpip_stack_direct.cmxs"
+)
+package "stack-socket" (
+  directory = "stack-socket"
+  description = ""
+  requires = "cstruct-lwt
+              io-page-unix
+              ipaddr.unix
+              logs
+              lwt.unix
+              mirage-protocols-lwt
+              mirage-stack-lwt
+              tcpip.icmpv4
+              tcpip.ipv4
+              tcpip.ipv6"
+  archive(byte) = "tcpip_stack_socket.cma"
+  archive(native) = "tcpip_stack_socket.cmxa"
+  plugin(byte) = "tcpip_stack_socket.cma"
+  plugin(native) = "tcpip_stack_socket.cmxs"
+)
+package "tcp" (
+  directory = "tcp"
+  description = ""
+  requires = "bigarray
+              cstruct
+              cstruct
+              duration
+              fmt
+              io-page
+              ipaddr
+              logs
+              mirage-clock
+              mirage-profile
+              mirage-protocols-lwt
+              mirage-random
+              mirage-time-lwt
+              randomconv
+              rresult
+              sexplib
+              sexplib.0
+              tcpip
+              unix"
+  archive(byte) = "tcp.cma"
+  archive(native) = "tcp.cmxa"
+  plugin(byte) = "tcp.cma"
+  plugin(native) = "tcp.cmxs"
+)
+package "tcpv4-socket" (
+  directory = "tcpv4-socket"
+  description = ""
+  requires = "cstruct-lwt fmt ipaddr.unix lwt.unix mirage-protocols-lwt"
+  archive(byte) = "tcpv4_socket.cma"
+  archive(native) = "tcpv4_socket.cmxa"
+  plugin(byte) = "tcpv4_socket.cma"
+  plugin(native) = "tcpv4_socket.cmxs"
+)
+package "tcpv6-socket" (
+  directory = "tcpv6-socket"
+  description = ""
+  requires = "cstruct-lwt
+              fmt
+              ipaddr.unix
+              lwt.unix
+              mirage-protocols-lwt
+              tcpip.tcpv4-socket"
+  archive(byte) = "tcpv6_socket.cma"
+  archive(native) = "tcpv6_socket.cmxa"
+  plugin(byte) = "tcpv6_socket.cma"
+  plugin(native) = "tcpv6_socket.cmxs"
+)
+package "udp" (
+  directory = "udp"
+  description = ""
+  requires = "bigarray
+              cstruct
+              logs
+              mirage-protocols-lwt
+              mirage-random
+              randomconv
+              rresult
+              sexplib
+              sexplib.0
+              tcpip
+              unix"
+  archive(byte) = "tcpip_udpv4.cma"
+  archive(native) = "tcpip_udpv4.cmxa"
+  plugin(byte) = "tcpip_udpv4.cma"
+  plugin(native) = "tcpip_udpv4.cmxs"
+)
+package "udpv4-socket" (
+  directory = "udpv4-socket"
+  description = ""
+  requires = "cstruct-lwt fmt ipaddr.unix lwt.unix mirage-protocols-lwt"
+  archive(byte) = "udpv4_socket.cma"
+  archive(native) = "udpv4_socket.cmxa"
+  plugin(byte) = "udpv4_socket.cma"
+  plugin(native) = "udpv4_socket.cmxs"
+)
+package "udpv6-socket" (
+  directory = "udpv6-socket"
+  description = ""
+  requires = "cstruct-lwt fmt ipaddr.unix lwt.unix mirage-protocols-lwt"
+  archive(byte) = "udpv6_socket.cma"
+  archive(native) = "udpv6_socket.cmxa"
+  plugin(byte) = "udpv6_socket.cma"
+  plugin(native) = "udpv6_socket.cmxs"
+)
+package "unix" (
+  directory = "unix"
+  description = ""
+  requires = ""
+  archive(byte) = "tcpip_unix.cma"
+  archive(native) = "tcpip_unix.cmxa"
+  plugin(byte) = "tcpip_unix.cma"
+  plugin(native) = "tcpip_unix.cmxs"
+)
+package "xen" (
+  directory = "xen"
+  description = ""
+  requires = "tcpip"
+  archive(byte) = "tcpip_xen.cma"
+  archive(native) = "tcpip_xen.cmxa"
+  plugin(byte) = "tcpip_xen.cma"
+  plugin(native) = "tcpip_xen.cmxs"
+)
+
+xen_linkopts = "-L@tcpip/xen -ltcpip_xen_stubs"

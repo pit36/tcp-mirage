@@ -1,0 +1,13 @@
+src/tcp/ack.pp.mli: Lwt Lwt_mvar Mirage_time_lwt Sequence
+src/tcp/flow.pp.mli: Cstruct Lwt Mirage_clock Mirage_protocols_lwt Mirage_random Mirage_time_lwt
+src/tcp/options.pp.mli: Cstruct Format Result
+src/tcp/pcb.pp.mli: Cstruct Fmt Format Lwt Mirage_clock Mirage_protocols Mirage_protocols_lwt Mirage_random Mirage_time_lwt Result
+src/tcp/segment.pp.mli: Cstruct Format Lwt Lwt_mvar Mirage_clock Mirage_time_lwt Options Result Sequence State Tcp_packet Window
+src/tcp/sequence.pp.mli: Format
+src/tcp/state.pp.mli: Format Lwt Mirage_time_lwt Sequence
+src/tcp/stats.pp.mli: Format
+src/tcp/tcp_packet.pp.mli: Cstruct Format Options Result Sequence
+src/tcp/tcptimer.pp.mli: Lwt Mirage_time_lwt Sequence
+src/tcp/user_buffer.pp.mli: Cstruct Lwt Lwt_mvar Mirage_clock Mirage_time_lwt Options Segment Window
+src/tcp/window.pp.mli: Format Mirage_clock Sequence
+src/tcp/wire.pp.mli: Cstruct Fmt Lwt Mirage_protocols Mirage_protocols_lwt Options Result Sequence

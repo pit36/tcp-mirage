@@ -1,0 +1,30 @@
+B ../../_build/default/src/icmp
+B ../../_build/default/src/tcpip_checksum
+B ../../_build/default/src/udp
+FLG -ppx '/home/iperf/iperf_server/mirage-tcpip/mirage-tcpip/_build/default/.ppx/ppx_cstruct/ppx.exe --as-ppx --cookie '\''library-name="tcpip_icmpv4"'\'''
+FLG -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs
+PKG bigarray
+PKG bytes
+PKG cstruct
+PKG fmt
+PKG ipaddr
+PKG logs
+PKG lwt
+PKG mirage-device
+PKG mirage-flow
+PKG mirage-profile
+PKG mirage-protocols
+PKG mirage-protocols-lwt
+PKG mirage-random
+PKG ocplib-endian
+PKG ocplib-endian.bigstring
+PKG randomconv
+PKG result
+PKG rresult
+PKG sexplib
+PKG sexplib.0
+PKG uchar
+PKG unix
+S .
+S ../tcpip_checksum
+S ../udp

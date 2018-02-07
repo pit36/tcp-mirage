@@ -1,0 +1,3 @@
+src/stack-unix/ipv4_socket.ml: Cstruct Ipaddr Ipv4_wire Lwt Mirage_protocols
+src/stack-unix/ipv6_socket.ml: Cstruct Ipaddr Ipv6_wire Lwt
+src/stack-unix/tcpip_stack_socket.ml: Cstruct Format Hashtbl Ipaddr Ipaddr_unix Ipv4_socket Logs Lwt Lwt_cstruct Lwt_unix Mirage_protocols_lwt Mirage_stack_lwt Printf Tcpv4_socket Udpv4_socket
